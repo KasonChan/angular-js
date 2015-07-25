@@ -10,4 +10,8 @@ object Application extends Controller {
     Future.successful(Ok(views.html.index("Your new application is ready.")))
   }
 
+  def helloworld = Action.async {
+    Future.successful(Ok(views.html.helloworld()))
+  }
+
 }
